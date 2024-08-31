@@ -1,0 +1,305 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F0F0F0"
+    tools:context=".CrearHorario">
+
+    <View
+        android:id="@+id/view10"
+        android:layout_width="413dp"
+        android:layout_height="112dp"
+        android:background="@drawable/barrablancadown"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="244dp"
+        android:layout_height="79dp"
+        android:fontFamily="@font/poppins_bold"
+        android:text="Crear nuevo horario"
+        android:textAlignment="center"
+        android:textColor="#9FA9DC"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toBottomOf="@+id/view10"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.484" />
+
+    <View
+        android:id="@+id/view13"
+        android:layout_width="125dp"
+        android:layout_height="40dp"
+        android:background="@drawable/bordetextoazul"
+        app:layout_constraintBottom_toBottomOf="@+id/textView11"
+        app:layout_constraintEnd_toEndOf="@+id/textView11"
+        app:layout_constraintHorizontal_bias="0.552"
+        app:layout_constraintStart_toStartOf="@+id/textView11"
+        app:layout_constraintTop_toTopOf="@+id/textView11"
+        app:layout_constraintVertical_bias="0.523" />
+
+    <TextView
+        android:id="@+id/textView11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="140dp"
+        android:fontFamily="@font/poppins_medium"
+        android:text="Rango"
+        android:textColor="#FFFFFF"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.169"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/view10"
+        app:layout_constraintVertical_bias="0.101" />
+
+    <View
+        android:id="@+id/view14"
+        android:layout_width="125dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="76dp"
+        android:background="@drawable/bordetextoazul"
+        app:layout_constraintBottom_toTopOf="@+id/textView11"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.055"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/view10"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <View
+        android:id="@+id/view11"
+        android:layout_width="125dp"
+        android:layout_height="41dp"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/bordetextoazul"
+        app:layout_constraintBottom_toTopOf="@+id/view14"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.055"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/view10"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/button6"
+        android:layout_width="160dp"
+        android:layout_height="47dp"
+        android:background="@drawable/bordetextoverde"
+        android:fontFamily="@font/poppins_medium"
+        android:text="Generar Horarios"
+        android:textAlignment="center"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/view10"
+        app:layout_constraintVertical_bias="0.924" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/poppins_medium"
+        android:text="Nombre horario"
+        android:textColor="#FFFFFF"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="@+id/view11"
+        app:layout_constraintEnd_toEndOf="@+id/view11"
+        app:layout_constraintStart_toStartOf="@+id/view11"
+        app:layout_constraintTop_toTopOf="@+id/view11" />
+
+    <TextView
+        android:id="@+id/textView14"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/poppins_medium"
+        android:text="Nivel"
+        android:textColor="#FFFFFF"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="@+id/view14"
+        app:layout_constraintEnd_toEndOf="@+id/view14"
+        app:layout_constraintStart_toStartOf="@+id/view14"
+        app:layout_constraintTop_toTopOf="@+id/view14" />
+
+    <EditText
+        android:id="@+id/editTextNombreHorario"
+        android:layout_width="221dp"
+        android:layout_height="38dp"
+        android:layout_marginTop="25dp"
+        android:background="#FFFF"
+        android:ems="10"
+        android:fontFamily="@font/poppins_medium"
+        android:hint="Ingresa el nombre del horario"
+        android:inputType="text"
+        android:textAlignment="center"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.453"
+        app:layout_constraintStart_toEndOf="@+id/view11"
+        app:layout_constraintTop_toBottomOf="@+id/view10"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="379dp"
+        android:layout_height="42dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/view10"
+        app:layout_constraintVertical_bias="0.189">
+
+        <RadioButton
+            android:id="@+id/radioInicial"
+            android:layout_width="122dp"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins_medium"
+            android:text="Incial"
+            android:textSize="12sp" />
+
+        <RadioButton
+            android:id="@+id/radioPrimaria"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins_medium"
+            android:text="Primaria"
+            android:textSize="12sp" />
+
+        <RadioButton
+            android:id="@+id/radioSecundaria"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:fontFamily="@font/poppins_medium"
+            android:text="Secundaria"
+            android:textSize="12sp" />
+
+    </RadioGroup>
+
+    <Spinner
+        android:id="@+id/spinnerDias"
+        android:layout_width="137dp"
+        android:layout_height="33dp"
+        android:background="#FFFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.058"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView11"
+        app:layout_constraintVertical_bias="0.063" />
+
+    <Button
+        android:id="@+id/buttonEventos"
+        android:layout_width="237dp"
+        android:layout_height="82dp"
+        android:layout_marginBottom="12dp"
+        android:background="@drawable/bordetextoazul"
+        android:fontFamily="@font/poppins_medium"
+        android:onClick="onClickEventos"
+        android:text="Eventos"
+        android:textAllCaps="false"
+        android:textColor="#FFFF"
+        app:layout_constraintBottom_toTopOf="@+id/buttonCursos"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/view10"
+        app:layout_constraintVertical_bias="0.983" />
+
+    <Button
+        android:id="@+id/buttonCursos"
+        android:layout_width="237dp"
+        android:layout_height="82dp"
+        android:background="@drawable/bordetextoazul"
+        android:fontFamily="@font/poppins_medium"
+        android:onClick="onClickCurso"
+        android:text="Cursos"
+        android:textAllCaps="false"
+        android:textColor="#FFFFFF"
+        app:layout_constraintBottom_toTopOf="@+id/buttonDocentes"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/view10"
+        app:layout_constraintVertical_bias="0.957" />
+
+    <Button
+        android:id="@+id/buttonDocentes"
+        android:layout_width="237dp"
+        android:layout_height="82dp"
+        android:layout_marginTop="529dp"
+        android:layout_marginBottom="168dp"
+        android:background="@drawable/bordetextoazul"
+        android:fontFamily="@font/poppins_medium"
+        android:onClick="onClickDocentes"
+        android:text="Docentes"
+        android:textAllCaps="false"
+        android:textColor="#FFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/view10"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <EditText
+        android:id="@+id/editTextHoraInicio"
+        android:layout_width="109dp"
+        android:layout_height="44dp"
+        android:ems="10"
+        android:fontFamily="@font/poppins_medium"
+        android:hint="Hora inicio"
+        android:inputType="text"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.079"
+        app:layout_constraintStart_toEndOf="@+id/spinnerDias"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.432" />
+
+    <EditText
+        android:id="@+id/editTextHoraFin"
+        android:layout_width="107dp"
+        android:layout_height="44dp"
+        android:ems="10"
+        android:fontFamily="@font/poppins_medium"
+        android:hint="Hora fin"
+        android:inputType="text"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.894"
+        app:layout_constraintStart_toEndOf="@+id/spinnerDias"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.432" />
+
+    <EditText
+        android:id="@+id/editTextCantidadGrados"
+        android:layout_width="221dp"
+        android:layout_height="38dp"
+        android:background="#FFF"
+        android:ems="10"
+        android:fontFamily="@font/poppins_medium"
+        android:hint="Ingresa la cantidad de grados"
+        android:inputType="numberSigned"
+        android:textAlignment="center"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.857"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.222" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

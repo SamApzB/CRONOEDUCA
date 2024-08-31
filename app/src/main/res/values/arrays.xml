@@ -1,0 +1,6 @@
+<resources>
+    <string-array name="week_days">
+        <item>Lunes - Viernes</item>
+        <!-- Agrega más días o rangos si es necesario -->
+    </string-array>
+</resources>
